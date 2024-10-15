@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config'
+import vercel from '@astrojs/vercel/serverless';
 // Adapter
 // if you want deploy on vercel
 import vercel from '@astrojs/vercel/serverless'
