@@ -12,10 +12,21 @@ class LRU<K, V> extends Map<K, V> {
   }
 
   override set(key: K, value: V): this {
-    this.#touch(key, value)
-    if (this.size > this.maxSize) this.delete(this.keys().next().value)
-    return this
+    this.#touch(key, value);
+
+    // 检查 size 是否超过 maxSize
+    if (this.size > this.maxSize) {
+      const firstKey = this.keys().next().value;
+
+      // 如果 firstKey 存在，则删除它
+      if (firstKey !== undefined) {
+        this.delete(firstKey);
+      }
+    }
+
+    return this;
   }
+
 
   #touch(key: K, value: V): void {
     this.delete(key)
@@ -86,14 +97,14 @@ async function parseOpenGraph(pageUrl: string) {
   const description = getMetaProperty('og:description') || getMetaName('description')
   const image = urlOrNull(
     getMetaProperty('og:image:secure_url') ||
-      getMetaProperty('og:image:url') ||
-      getMetaProperty('og:image')
+    getMetaProperty('og:image:url') ||
+    getMetaProperty('og:image')
   )
   const imageAlt = getMetaProperty('og:image:alt')
   const video = urlOrNull(
     getMetaProperty('og:video:secure_url') ||
-      getMetaProperty('og:video:url') ||
-      getMetaProperty('og:video')
+    getMetaProperty('og:video:url') ||
+    getMetaProperty('og:video')
   )
   const videoType = getMetaProperty('og:video:type')
   const url =
