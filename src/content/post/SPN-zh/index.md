@@ -1,5 +1,5 @@
 ---
-title: 浅谈SPN网路的线性分析和差分分析
+title: 浅谈SPN网路的线性和差分分析
 publishDate: 2024-10-16 23:00:00
 description: '从理论和实践分析SPN网络的两种攻击方式'
 tags:
@@ -14,3 +14,5 @@ language: '中文'
 ## 线性分析
 
 ## 差分分析
+
+## 总结
