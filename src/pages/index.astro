@@ -16,9 +16,9 @@ import GithubCard from '@/components/GithubCard.astro'
 
 import avatar from '@/assets/avatar.png'
 
-const languages = ['C/C++', 'Python', 'Rust', 'RISC-V']
-const platforms = ['Linux', 'Android', 'Windows']
-const theories = ['Compiler', 'Architecture', 'Cryptography', 'Graphics']
+const languages = ['C/C++', 'Python', 'Rust', 'RISC-V', 'Verilog']
+const development = ['Linux', 'Android', 'OpenHarmony', 'Phytium Pi']
+const academia = ['Compiler', 'Architecture', 'Cryptography', 'Graphics']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -60,7 +60,10 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     <Section title='About'>
       <p class='text-muted-foreground'>NKUCSer / Independent Developer</p>
       <p class='text-muted-foreground'>
-        I'm currently a CS undergraduate student at Nankai University.
+        I'm currently a CS undergraduate student at Nankai University. I have a vast research
+        interest, including computer architecture, computer graphics, operating system, compiler and
+        cryptograpy. I'm proficient in C/C++, Python, Rust Assembly and Verilog. If you have some
+        cool idea, feel free to contact me, my email is 2212202@mail.nankai.edu.cn.
       </p>
       <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
     </Section>
@@ -91,7 +94,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           backgroundImage: 'url(images/Nankai_University_logo.svg)',
           backgroundPosition: 'right',
           backgroundRepeat: 'no-repeat',
-          backgroundSize: '256px'
+          backgroundSize: '240px'
         }}
       >
         <ul class='ms-4 list-disc text-muted-foreground'>
@@ -114,8 +117,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       >
         <ul class='ms-4 list-disc text-muted-foreground'>
           <li>
-            XXXX
-            <li>XXXX</li>
+            A month of intensive internship in a embedded system manufacturing company.
+            <li>Gained a lot of experience in developing Linux kernel.</li>
           </li>
         </ul>
       </Card>
@@ -154,7 +157,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <Card
         as='a'
         heading='Certificated Embedded System Engineer'
-        subheading='XXXX'
+        subheading='By the Ministry of Industry and Information Technology.'
         date='July 2024'
         href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
       />
@@ -162,8 +165,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
     <Section title='Skills'>
       <SkillLayout title='Languages' skills={languages} />
-      <SkillLayout title='Platforms' skills={platforms} />
-      <SkillLayout title='Theories' skills={theories} />
+      <SkillLayout title='Development' skills={development} />
+      <SkillLayout title='Academia' skills={academia} />
     </Section>
   </div>
 

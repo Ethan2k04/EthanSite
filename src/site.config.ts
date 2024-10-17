@@ -28,12 +28,12 @@ export const siteConfig: SiteConfig = {
   //   url: 'https://icp.gov.moe/?keyword=APTX4869',
   //   text: '萌ICP备APTX4869号'
   // },
-  walineServerUrl: 'https://astro-theme-pure-waline.arthals.ink',
+  walineServerUrl: 'https://www.ethan2k04.icu/',
   applyFriendTip: {
-    name: 'Astro Theme Pure',
+    name: 'Ethan\'s Site',
     slogan: '吾将上下而求索',
-    url: 'https://astro-theme-pure.vercel.app/',
-    avatar: 'https://cravatar.cn/avatar/1ffe42aa45a6b1444a786b1f32dfa8aa?s=200'
+    url: 'https://www.ethan2k04.icu/',
+    avatar: 'https://www.ethan2k04.icu/_image?href=%2F_astro%2Favatar.DEuqP5JF.png&f=webp'
   }
 }
 
