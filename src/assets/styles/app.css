@@ -74,6 +74,10 @@
   }
 }
 
+html {
+  zoom: 2;
+}
+
 html.dark {
   .astro-code,
   .astro-code span {
