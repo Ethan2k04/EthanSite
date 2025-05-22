@@ -77,9 +77,14 @@ const headings = [
     ]}
   />
 
-  <h2 id='programs'>Programs</h2>
+  <h2 id='programs'>Projects</h2>
   <ProjectSection
     project={[
+      {
+        name: '🎾 https://github.com/Ethan2k04/TennisDetection',
+        description: 'Tennis trajectory tracking based on YOLO11',
+        links: [{ type: 'github', href: 'https://github.com/Ethan2k04/TennisDetection' }]
+      },
       {
         name: '⌨️ nku-compiler-2024-rs',
         description: 'A SYSY compiler written with Rust.',
@@ -90,11 +95,6 @@ const headings = [
             href: 'https://github.com/Ethan2k04/nku-compiler-2024-rs/blob/main/README.md'
           }
         ]
-      },
-      {
-        name: '😴 SleepFastApp',
-        description: 'An android app that intergrate alarm clock with sleep monitoring.',
-        links: [{ type: 'github', href: 'https://github.com/Ethan2k04/SleepFastApp' }]
       }
     ]}
   />
@@ -102,51 +102,18 @@ const headings = [
     <ProjectSection
       project={[
         {
-          name: 'NKUStar_TestBench',
+          name: '💻 NKUStar_TestBench',
           description: 'A simple CPU performance testbench',
           links: [{ type: 'github', href: 'https://github.com/Ethan2k04/NKUStar_TestBench' }]
+        },
+        {
+          name: '😴 SleepFastApp',
+          description: 'An android app that intergrate alarm clock with sleep monitoring.',
+          links: [{ type: 'github', href: 'https://github.com/Ethan2k04/SleepFastApp' }]
         }
       ]}
     />
   </Collapse>
-
-  <h2 id='learnings'>Learnings</h2>
-  <ProjectSection
-    class='my-2'
-    project={[
-      {
-        name: 'XXXX',
-        description: 'XXXX',
-        links: [{ type: 'github', href: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }]
-      },
-      {
-        name: 'XXXX',
-        description: 'XXXX',
-        links: [
-          {
-            type: 'github',
-            href: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-          }
-        ]
-      }
-    ]}
-  />
-
-  <h2 id='others'>Others</h2>
-  <ProjectSection
-    project={[
-      {
-        name: 'XXXX',
-        description: 'XXXX',
-        links: [{ type: 'github', href: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }]
-      },
-      {
-        name: 'XXXX',
-        description: 'XXXX',
-        links: [{ type: 'github', href: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }]
-      }
-    ]}
-  />
 
   <!-- gpg signature -->
   <h2 id='gpg-signature'>GPG Signature</h2>

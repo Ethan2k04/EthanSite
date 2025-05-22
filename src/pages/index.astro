@@ -16,9 +16,9 @@ import GithubCard from '@/components/GithubCard.astro'
 
 import avatar from '@/assets/avatar.png'
 
-const languages = ['C/C++', 'Python', 'Rust', 'RISC-V', 'Verilog']
-const development = ['Linux', 'Android', 'OpenHarmony', 'Phytium Pi']
-const academia = ['Compiler', 'Architecture', 'Cryptography', 'Graphics']
+const languages = ['C/C++', 'Python', 'C#', 'Rust', 'ASM']
+const development = ['Linux', 'Android', 'MacOS']
+const academia = ['Computer Vision', 'Diffusion', 'Computer System', 'Graphics']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -46,7 +46,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           <Label
             title='Source code'
             as='a'
-            href='https://github.com/cworld1/theme-astro-pure'
+            href='https://github.com/Ethan2k04/Ethan2k04'
             target='_blank'
           >
             <svg class='size-5' slot='icon'>
@@ -60,9 +60,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     <Section title='About'>
       <p class='text-muted-foreground'>NKUCSer / Undergraduate</p>
       <p class='text-muted-foreground'>
-        I'm currently a CS undergraduate student at Nankai University.
-        I have experience in computer vision, game development and computer system design.
-        Currently, I'm doing research in Classifier Guidance of Difussion Model.
+        I'm currently a CS undergraduate student at <strong>Nankai University</strong>.
+        I have experience in <strong>computer vision</strong>, <strong>game development</strong> and <strong>computer system design</strong>.
+        Recently, I'm doing research in <strong>Classifier Guidance of Difussion Model</strong>.
         Contact me if you or your group have some cool ideas that I can help.
       </p>
       <p>Gmail: <a href="yintengjiao2004@gmail.com">yintengjiao2004@gmail.com</a></p>
@@ -111,17 +111,27 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
     <Section title='Experience'>
       <Card
-        heading='Internship'
-        subheading='Phytium Technology Co.,Ltd'
-        date='June 2024 - July 2024'
+        heading='Research Intern'
+        subheading='VCIP'
+        date='April 2025 - Now'
         altText='Lorem, ipsum dolor sit'
         imageClass='h-12 w-auto md:-start-16'
       >
         <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>
-            A month of intensive internship in a embedded system manufacturing company.
-            <li>Gained a lot of experience in developing Linux kernel.</li>
-          </li>
+          <li>Doing research on <strong>Classifier Guidance of Difussion Model</strong>.</li>
+          <li>Implement code of other projects.</li>
+        </ul>
+      </Card>
+      <Card
+        heading='Intern'
+        subheading='Phytium Technology Co.,Ltd'
+        date='June 2024 - August 2024'
+        altText='Lorem, ipsum dolor sit'
+        imageClass='h-12 w-auto md:-start-16'
+      >
+        <ul class='ms-4 list-disc text-muted-foreground'>
+          <li>2 months of intensive internship in a embedded system manufacturing company.</li>
+          <li>Gained a lot of experience in developing Linux kernel.</li>
         </ul>
       </Card>
     </Section>
