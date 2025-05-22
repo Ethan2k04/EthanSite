@@ -5,16 +5,22 @@
       "desc": "列入友链朋友圈的好友",
       "link_list": [
         {
-          "name": "KaiserTT",
-          "intro": "Collaborator, Developer",
-          "link": "https://kaisertt.github.io/",
-          "avatar": "https://avatars.githubusercontent.com/u/116904940?v=4"
+          "name": "Luhaozhhhe",
+          "intro": "Cyber Science & Finance",
+          "link": "https://github.com/Luhaozhhhe",
+          "avatar": "https://avatars.githubusercontent.com/u/150448469?v=4"
         },
         {
-          "name": "Lazy Forever",
-          "intro": "Idea Creator, Hacker",
-          "link": "https://blog.lazyforever.top/",
-          "avatar": "https://avatars.githubusercontent.com/u/64030496?v=4"
+          "name": "zzzhj514",
+          "intro": "Info Security & Law",
+          "link": "https://github.com/zzzhj514",
+          "avatar": "https://avatars.githubusercontent.com/u/132463300?v=4"
+        },
+        {
+          "name": "GH2050",
+          "intro": "DDL Master",
+          "link": "https://github.com/GH2050",
+          "avatar": "https://avatars.githubusercontent.com/u/129247675?v=4"
         },
         {
           "name": "SylvanJu",
@@ -23,10 +29,16 @@
           "avatar": "https://avatars.githubusercontent.com/u/120363896?v=4"
         },
         {
-          "name": "GH2050",
-          "intro": "DDL Master",
-          "link": "https://github.com/GH2050",
-          "avatar": "https://avatars.githubusercontent.com/u/129247675?v=4"
+          "name": "Lazy Forever",
+          "intro": "Idea Creator, Hacker",
+          "link": "https://blog.lazyforever.top/",
+          "avatar": "https://avatars.githubusercontent.com/u/64030496?v=4"
+        },
+        {
+          "name": "KaiserTT",
+          "intro": "Collaborator, Developer",
+          "link": "https://kaisertt.github.io/",
+          "avatar": "https://avatars.githubusercontent.com/u/116904940?v=4"
         }
       ]
     },
@@ -59,22 +71,10 @@
       "desc": "其他特殊链接",
       "link_list": [
         {
-          "name": "虫洞",
-          "intro": "随机前往十年之约的成员博客",
-          "link": "https://www.foreverblog.cn/go.html",
-          "avatar": "/images/wormhole.png"
-        },
-        {
-          "name": "开往",
-          "intro": "随机前往开往的成员博客",
-          "link": "https://www.travellings.cn/go.html",
-          "avatar": "https://www.travellings.cn/assets/travelling.png"
-        },
-        {
-          "name": "BlogFinder",
-          "intro": "聚合优秀的个人博客，发掘优质的个人博客文章和内容",
-          "link": "https://bf.zzxworld.com/s",
-          "avatar": "https://bf.zzxworld.com/images/favicon.png"
+          "name": "中英双语NIV版圣经",
+          "intro": "祷告，学习，分享",
+          "link": "https://prayers.github.io/learning/bible/bible_content.html",
+          "avatar": "/images/the_holy_bible.jpg"
         }
       ]
     }
