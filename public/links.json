@@ -6,22 +6,52 @@
       "link_list": [
         {
           "name": "KaiserTT",
-          "intro": "Collaborator, Developer, Classmate, Friend",
+          "intro": "Collaborator, Developer",
           "link": "https://kaisertt.github.io/",
           "avatar": "https://avatars.githubusercontent.com/u/116904940?v=4"
         },
         {
           "name": "Lazy Forever",
-          "intro": "Idea Creator, Hacker, CTFer, Friend",
+          "intro": "Idea Creator, Hacker",
           "link": "https://blog.lazyforever.top/",
           "avatar": "https://avatars.githubusercontent.com/u/64030496?v=4"
+        },
+        {
+          "name": "SylvanJu",
+          "intro": "Cryptographer",
+          "link": "https://github.com/SylvanJu",
+          "avatar": "https://avatars.githubusercontent.com/u/120363896?v=4"
+        },
+        {
+          "name": "GH2050",
+          "intro": "DDL Master",
+          "link": "https://github.com/GH2050",
+          "avatar": "https://avatars.githubusercontent.com/u/129247675?v=4"
         }
       ]
     },
     {
-      "id_name": "inactive-links",
-      "desc": "不太活跃的好友",
+      "id_name": "mentor-links",
+      "desc": "导师链接",
       "link_list": [
+        {
+          "name": "Xi Wang",
+          "intro": "postdoc, Ecole Polytechnique",
+          "link": "https://triocrossing.github.io/",
+          "avatar": "https://triocrossing.github.io/assets/img/xi_pic.jpg?1033d54598f45515de7af1a77b084a63"
+        },
+        {
+          "name": "Jinglei Shi",
+          "intro": "lecturer, Nankai University",
+          "link": "https://jingleishi.github.io/",
+          "avatar": "https://jingleishi.github.io/images/Jinglei.png"
+        },
+        {
+          "name": "Yong Deng",
+          "intro": "Assistant Professor, Lakehead University",
+          "link": "https://www.lakeheadu.ca/users/D/ydeng11",
+          "avatar": "https://www.lakeheadu.ca/sites/default/files/profiles/Photo_YongDeng.jpg"
+        }
       ]
     },
     {
