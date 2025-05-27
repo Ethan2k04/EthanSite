@@ -12,4 +12,14 @@ language: 'English'
 
 ## Introduction
 
+Yah! It's Global Game Jam (abbr. <u>GGJ</u>). Me and my frined [KaiserTT](https://github.com/KaiserTT) went to the gamesite all the way from Tianjin to Shenzhen to Hongkong, what a journey.
+
+<div style="text-align: center;">
+  <img src="polyu1.jpg" width="300" />
+</div>
+
+<div style="text-align: center;">
+  We arrived at PolyU
+</div>
+
 ## Ending
