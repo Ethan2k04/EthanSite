@@ -25,7 +25,7 @@ Yah! It's Global Game Jam (abbr. <u>GGJ</u>). Me and my frined [KaiserTT](https:
 Let along the competition for a sec, let's have a delicious meal first🤤
 
 <div style="text-align: center;">
-  <img src="/images/first_meal.jpg" width="300" />
+  <img src="/images/GGJ2025HK-en/first_meal.jpg" width="300" />
 </div>
 
 <div style="text-align: center;">
@@ -35,7 +35,7 @@ Let along the competition for a sec, let's have a delicious meal first🤤
 After having the meal, it's about to join the site.
 
 <div style="text-align: center;">
-  <img src="/images/sign.jpg" width="300" />
+  <img src="/images/GGJ2025HK-en/sign.jpg" width="300" />
 </div>
 
 <div style="text-align: center;">
