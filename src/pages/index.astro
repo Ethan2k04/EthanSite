@@ -16,9 +16,8 @@ import GithubCard from '@/components/GithubCard.astro'
 
 import avatar from '@/assets/avatar.png'
 
-const languages = ['C/C++', 'Python', 'C#', 'Rust', 'ASM']
-const development = ['Linux', 'Android', 'MacOS']
-const academia = ['Computer Vision', 'Diffusion', 'Computer System', 'Graphics']
+const languages = ['C/C++', 'Python', 'C#', 'Javascript', 'Rust']
+const academia = ['Computer Vision', 'Generative AI', 'Distributed System']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -61,11 +60,11 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <p class='text-muted-foreground'>NKUCSer / Undergraduate</p>
       <p class='text-muted-foreground'>
         I'm currently a CS undergraduate student at <strong>Nankai University</strong>.
-        I have experience in <strong>Computer Vision</strong>, <strong>Game Development</strong> and <strong>Computer System Design</strong>.
-        Recently, I'm doing research in <strong>Classifier Guidance of Difussion Model</strong>.
+        I have experience in <strong>Computer Vision</strong>, <strong>Generative AI</strong> and <strong>Game Development</strong>.
+        Recently, I'm doing research in <strong>Guidance of Difussion Model</strong> and <strong>Coded MapReduce</strong>.
         Contact me if you or your group have some cool ideas that I can help.
       </p>
-      <p>Gmail: <a href="yintengjiao2004@gmail.com">yintengjiao2004@gmail.com</a></p>
+      <p>Email: <a href="yintengjiao2004@gmail.com">yintengjiao2004@gmail.com</a></p>
       <p>Github: <a href="https://github.com/Ethan2k04">https://github.com/Ethan2k04</a></p>
       <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
     </Section>
@@ -112,26 +111,25 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     <Section title='Experience'>
       <Card
         heading='Research Intern'
-        subheading='Lab 404'
+        subheading='Nankai Computer Vision Lab'
         date='April 2025 - Now'
         altText='Lorem, ipsum dolor sit'
         imageClass='h-12 w-auto md:-start-16'
       >
         <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>Conducting research on <strong>Classifier Guidance of Difussion Model</strong>.</li>
-          <li>Implement code of other projects.</li>
+          <li>Conducting research on <strong>Guidance of Difussion Model</strong>.</li>
+          <li>Implementation of <strong>Optical Boundary Recognition</strong>.</li>
         </ul>
       </Card>
       <Card
-        heading='Intern'
-        subheading='Phytium Technology Co.,Ltd'
-        date='June 2024 - August 2024'
+        heading='Research Intern'
+        subheading='MITACS Global Research Internship'
+        date='August 2025 - November 2024'
         altText='Lorem, ipsum dolor sit'
         imageClass='h-12 w-auto md:-start-16'
       >
         <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>2 months of intensive internship in a embedded system manufacturing company.</li>
-          <li>Gained a lot of experience in developing Linux kernel.</li>
+          <li>Design and Optimization of MapReduce Based Distributed Computing for Machine Learning Jobs.</li>
         </ul>
       </Card>
     </Section>
@@ -177,7 +175,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
     <Section title='Skills'>
       <SkillLayout title='Languages' skills={languages} />
-      <SkillLayout title='Development' skills={development} />
       <SkillLayout title='Academia' skills={academia} />
     </Section>
   </div>
