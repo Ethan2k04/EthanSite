@@ -38,19 +38,29 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <div class='flex flex-col items-center gap-y-4'>
         <h1 class='text-3xl font-bold'>{siteConfig.author}</h1>
         <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-          <Label title='China'>
+          <Label title='Tianjin, China'>
             <svg class='size-5' slot='icon'>
               <use href='/icons/social.svg#mingcute-location-line'></use>
             </svg>
           </Label>
           <Label
-            title='Source code'
+            title='Github'
             as='a'
             href='https://github.com/Ethan2k04/Ethan2k04'
             target='_blank'
           >
             <svg class='size-5' slot='icon'>
               <use href='/icons/social.svg#mingcute-github-line'></use>
+            </svg>
+          </Label>
+          <Label
+            title='Email'
+            as='a'
+            href='yintengjiao2004@gmail.com'
+            target='_blank'
+          >
+            <svg class='size-5' slot='icon'>
+              <use href='/icons/social.svg#mingcute-mail-line'></use>
             </svg>
           </Label>
         </div>
@@ -176,7 +186,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
     <Section title='Skills'>
       <SkillLayout title='Language' skills={language} />
-      <SkillLayout title='Tech Stack' skills={language} />
+      <SkillLayout title='Tech Stack' skills={techstack} />
       <SkillLayout title='Academia' skills={academia} />
     </Section>
   </div>
