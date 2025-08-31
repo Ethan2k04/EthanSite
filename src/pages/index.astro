@@ -38,13 +38,11 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <div class='flex flex-col items-center gap-y-4'>
         <h1 class='text-3xl font-bold'>{siteConfig.author}</h1>
         <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-
           <Label title='Tianjin, China'>
             <svg class='size-5' slot='icon'>
               <use href='/icons/social.svg#mingcute-location-line'></use>
             </svg>
           </Label>
-
           <Label
             title='Github'
             as='a'
@@ -55,7 +53,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
               <use href='/icons/social.svg#mingcute-github-line'></use>
             </svg>
           </Label>
-          
           <Label
             title='Email'
             as='a'
@@ -64,18 +61,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           >
             <svg class='size-5' slot='icon'>
               <use href='/icons/social.svg#mingcute-mail-line'></use>
-            </svg>
-          </Label>
-
-          </Label>
-          <Label
-            title='CV'
-            as='a'
-            href=''
-            target='_blank'
-          >
-            <svg class='size-5' slot='icon'>
-              <use href='/icons/social.svg#mingcute-user-fill'></use>
             </svg>
           </Label>
         </div>
@@ -90,6 +75,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         Recently, I'm doing research in <strong>Guidance of Difussion Model</strong> and <strong>Coded MapReduce</strong>.
         Contact me if you or your group have some cool ideas that I can help.
       </p>
+      <p>Email: <a href="yintengjiao2004@gmail.com">yintengjiao2004@gmail.com</a></p>
+      <p>Github: <a href="https://github.com/Ethan2k04">https://github.com/Ethan2k04</a></p>
       <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
     </Section>
     {
@@ -111,7 +98,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     <Section title='Education'>
       <Card
         as='a'
-        heading='B.Eng. in Computer Science'
+        heading='B.S. in Computer Science'
         subheading='Nankai University'
         date='Sept 2022 – July 2026'
         href='https://en.nankai.edu.cn/'
