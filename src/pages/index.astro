@@ -16,7 +16,8 @@ import GithubCard from '@/components/GithubCard.astro'
 
 import avatar from '@/assets/avatar.png'
 
-const languages = ['C/C++', 'Python', 'C#', 'Javascript', 'Rust']
+const language = ['C/C++', 'Python', 'C#', 'Javascript', 'Rust']
+const techstack = ['Git', 'React', 'MongoDB', 'Vercel']
 const academia = ['Computer Vision', 'Generative AI', 'Distributed System']
 
 const MAX_POSTS = 10
@@ -124,7 +125,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <Card
         heading='Research Intern'
         subheading='MITACS Global Research Internship'
-        date='August 2025 - November 2024'
+        date='August 2025 - November 2025'
         altText='Lorem, ipsum dolor sit'
         imageClass='h-12 w-auto md:-start-16'
       >
@@ -174,7 +175,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     </Section>
 
     <Section title='Skills'>
-      <SkillLayout title='Languages' skills={languages} />
+      <SkillLayout title='Language' skills={language} />
+      <SkillLayout title='Tech Stack' skills={language} />
       <SkillLayout title='Academia' skills={academia} />
     </Section>
   </div>
