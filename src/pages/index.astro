@@ -16,9 +16,9 @@ import GithubCard from '@/components/GithubCard.astro'
 
 import avatar from '@/assets/avatar.png'
 
-const language = ['C/C++', 'Python', 'C#', 'Rust', 'Assembly']
-const techstack = ['Git', 'React', 'MongoDB', 'Vercel']
-const academia = ['Computer Vision', 'Generative AI', 'Distributed System']
+const language = ['C/C++', 'Python', 'C#', 'Rust']
+const techstack = ['Git', 'Pytorch', 'OpenCV', 'Huggingface']
+const research area = ['3D Vision', 'AIGC', 'GameDev']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -126,13 +126,13 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         imageClass='h-12 w-auto md:-start-16'
       >
         <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>Conducting research on <strong>Guidance of Difussion Model</strong>.</li>
-          <li>Implementation of <strong>Optical Boundary Recognition</strong>.</li>
+          <li>Researching on Diffusion Models and 3D Vision</li>
+          <li>Contributed to <strong>Project: Optical Boundary Recognition</strong>.</li>
         </ul>
       </Card>
       <Card
         heading='Research Intern'
-        subheading='MITACS Global Research Internship'
+        subheading='Lakehead University, Thunder Bay'
         date='August 2025 - November 2025'
         altText='Lorem, ipsum dolor sit'
         imageClass='h-12 w-auto md:-start-16'
@@ -171,16 +171,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         />
       </div>
     </Section> -->
-
-    <Section title='Certifications'>
-      <Card
-        as='a'
-        heading='Certificated Embedded System Engineer'
-        subheading='By the Ministry of Industry and Information Technology.'
-        date='July 2024'
-        href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-      />
-    </Section>
 
     <Section title='Skills'>
       <SkillLayout title='Language' skills={language} />

@@ -44,6 +44,12 @@ After having the meal, it's about to join the site.
 
 ## Game Topic & Prize
 
+TBD
+
 ## Making the Game
 
+TBD
+
 ## Ending
+
+TBD
