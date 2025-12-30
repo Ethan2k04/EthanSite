@@ -31,7 +31,7 @@ export const siteConfig: SiteConfig = {
   walineServerUrl: 'https://www.ethan2k04.icu/',
   applyFriendTip: {
     name: 'Ethan\'s Site',
-    slogan: '吾将上下而求索',
+    slogan: 'Stay hungry, stay foolish.',
     url: 'https://www.ethan2k04.icu/',
     avatar: 'https://www.ethan2k04.icu/_image?href=%2F_astro%2Favatar.DEuqP5JF.png&f=webp'
   }
