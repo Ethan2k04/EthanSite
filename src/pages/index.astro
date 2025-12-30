@@ -18,7 +18,7 @@ import avatar from '@/assets/avatar.png'
 
 const language = ['C/C++', 'Python', 'C#', 'Rust']
 const techstack = ['Git', 'Pytorch', 'OpenCV', 'Huggingface']
-const research area = ['3D Vision', 'AIGC', 'GameDev']
+const research = ['3D Vision', 'AIGC', 'GameDev']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -175,7 +175,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     <Section title='Skills'>
       <SkillLayout title='Language' skills={language} />
       <SkillLayout title='Tech Stack' skills={techstack} />
-      <SkillLayout title='Academia' skills={academia} />
+      <SkillLayout title='Research Area' skills={research} />
     </Section>
   </div>
 
