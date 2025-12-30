@@ -63,31 +63,17 @@ const headings = [
     </svg>
   </Button>
 
-  <h2 id='theme'>Themes</h2>
-  <ProjectSection
-    project={[
-      {
-        name: '🖥️ EthanSite',
-        description: 'My simple and elegant personal site.',
-        links: [
-          { type: 'github', href: 'https://github.com/Ethan2k04/EthanSite' },
-          { type: 'site', href: 'https://www.ethan2k04.icu/' }
-        ]
-      }
-    ]}
-  />
-
   <h2 id='programs'>Projects</h2>
   <ProjectSection
     project={[
       {
         name: '🎾 TennisDetection',
-        description: 'Tennis trajectory tracking based on YOLO11',
+        description: 'Tennis trajectory tracking system based on YOLO11',
         links: [{ type: 'github', href: 'https://github.com/Ethan2k04/TennisDetection' }]
       },
       {
         name: '⌨️ nku-compiler-2024-rs',
-        description: 'A SYSY compiler written with Rust.',
+        description: 'A simple compiler written in Rust.',
         links: [
           { type: 'github', href: 'https://github.com/Ethan2k04/nku-compiler-2024-rs' },
           {
@@ -114,22 +100,6 @@ const headings = [
       ]}
     />
   </Collapse>
-
-  <!-- gpg signature -->
-  <h2 id='gpg-signature'>GPG Signature</h2>
-  <p>
-    You can verify the authenticity of the files I signed by checking the GPG signature. My GPG key
-    is <code>XXXXXXXX</code>, and you can find it on the opengpg key servers or download from it.
-  </p>
-  <Button
-    href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-    title='Checkout my key'
-    target='_blank'
-  >
-    <svg class='size-5' slot='before'>
-      <use href='/icons/project.svg#mingcute-key-2-line'></use>
-    </svg>
-  </Button>
 
   <!-- sponsorship -->
   <h2 id="sponsorship" class="flex items-center">Sponsorship</h2>
