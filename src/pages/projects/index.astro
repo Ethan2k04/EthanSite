@@ -132,26 +132,24 @@ const headings = [
   </Button>
 
   <!-- sponsorship -->
-  <h2 id='sponsorship'>Sponsorship</h2>
-  <p>Please leave a message or contact me proactively after sponsorship.</p>
-  <!-- Buy Me a Coffee -->
-  <div class="mb-6 flex justify-center">
+  <h2 id="sponsorship" class="flex items-center gap-2">
+    Sponsorship
     <a
       href="https://buymeacoffee.com/ethan2k04"
       target="_blank"
       rel="noopener noreferrer"
-      class="flex items-center gap-3 rounded-xl border bg-white px-5 py-3 shadow-sm transition hover:shadow-md"
+      class="inline-flex items-center"
+      aria-label="Buy me a coffee"
+      title="Buy me a coffee"
     >
       <img
         src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-        alt="Buy Me a Coffee"
-        class="h-8 w-8"
+        alt=""
+        class="h-6 w-6 opacity-80 transition hover:opacity-100"
       />
-      <span class="text-sm font-medium text-gray-700">
-        Buy me a coffee
-      </span>
     </a>
-  </div>
+  </h2>
+  <p>Please leave a message or contact me proactively after sponsorship.</p>
   <div class='flex flex-col justify-center gap-4 sm:flex-row'>
     {
       [
@@ -175,7 +173,7 @@ const headings = [
     }
   </div>
   <p>Thanks to the following sponsors:</p>
-  <Sponsors sponsors={[{ name: 'NAME', amount: '$', date: 'YYYY-MM-DD' }]} />
+  <Sponsors sponsors={[{ name: 'NAME', amount: '$00.00', date: 'YYYY-MM-DD' }]} />
 </PageLayout>
 
 <script is:inline type='module' data-astro-rerun>
