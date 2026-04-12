@@ -18,7 +18,7 @@ import avatar from '@/assets/avatar.png'
 
 const language = ['C/C++', 'Python', 'C#', 'Rust']
 const techstack = ['Git', 'Pytorch', 'OpenCV', 'Huggingface']
-const research = ['3D Vision', 'AIGC', 'GameDev']
+const research = ['3D Vision', 'Diffusion Model', 'AI Agent']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -68,18 +68,15 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     </section>
 
     <Section title='About'>
-      <p class='text-muted-foreground'>Senior Student / Research Intern</p>
+      <p class='text-muted-foreground'>Senior Student / Intern</p>
       <p class='text-muted-foreground'>
-        I'm currently a CS undergraduate student at <strong>Nankai University</strong>.
-        I have a strong interest in <strong>3D Vision</strong>, <strong>AIGC</strong> and <strong>Game Development</strong>.
-        My research goal is realizing geometry grouded world modeling and enabling machine intelligence in real 3D world.
-        Feel free to contact me via Email.
+        I'm currently a CS undergraduate student at Nankai University and an intern of Microsoft STCA. I will join Nanyang Technological University as a graduate student soon. I have a strong interest in 3D Vision, AI Agents and Game Development. I am passionate about making AI to benefit humanity. 
       </p>
       <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
     </Section>
     {
       allPostsByDate.length > 0 && (
-        <Section title='Posts'>
+        <Section title='Publications'>
           <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
             {allPostsByDate.map((p) => (
               <li class='flex flex-col gap-x-2 sm:flex-row'>
@@ -88,7 +85,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
               </li>
             ))}
           </ul>
-          <Button title='More posts' class='w-fit self-end' href='/blog' style='ahead' />
+          <Button title='More publications' class='w-fit self-end' href='/pub' style='ahead' />
         </Section>
       )
     }
@@ -119,26 +116,54 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
     <Section title='Experience'>
       <Card
+        as='a'
+        heading='Software Engineer Intern'
+        subheading='Microsoft STCA'
+        date='April 2026 - July 2026'
+        href='https://www.microsoft.com/'
+        style={{
+          backgroundImage: 'url(images/Microsoft_logo.svg)',
+          backgroundPosition: 'right 20px center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '200px'
+        }}
+      >
+        <ul class='ms-4 list-disc text-muted-foreground'>
+          <li>AI Agent Testing & Development.</li>
+        </ul>
+      </Card>
+      <Card
         heading='Research Intern'
         subheading='Nankai Computer Vision Lab'
         date='April 2025 - Now'
         altText='Lorem, ipsum dolor sit'
         imageClass='h-12 w-auto md:-start-16'
+        style={{
+          backgroundImage: 'url(images/Nankai_University_logo.svg)',
+          backgroundPosition: 'right',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '240px'
+        }}
       >
         <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>Researching on Diffusion Models and 3D Vision.</li>
-          <li>Contributed to <strong>Project: Optical Boundary Recognition</strong>.</li>
+          <li>Image/Video Diffusion Models and 3D Vision.</li>
         </ul>
       </Card>
       <Card
         heading='Research Intern'
-        subheading='Lakehead University, Thunder Bay'
+        subheading='Mitacs Global Research Internship'
         date='August 2025 - November 2025'
         altText='Lorem, ipsum dolor sit'
         imageClass='h-12 w-auto md:-start-16'
+        style={{
+          backgroundImage: 'url(images/Mitacs_logo_blue.png)',
+          backgroundPosition: 'right 20px center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '160px'
+        }}
       >
         <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>Design and Optimization of MapReduce Based Distributed Computing for Machine Learning Jobs.</li>
+          <li>Coded Distributed Computing (MapReduce).</li>
         </ul>
       </Card>
     </Section>

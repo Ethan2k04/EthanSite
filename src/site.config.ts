@@ -2,7 +2,7 @@ import type { SiteConfig, MenuLinks, SocialLinks } from '@/types'
 
 export const siteConfig: SiteConfig = {
   // Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
-  author: 'T.J Yin',
+  author: 'Tengjiao Yin',
   // Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
   title: 'Ethan\'s Site',
   // Meta property used to generate your sitemap and canonical URLs in your final build
@@ -51,8 +51,8 @@ export const socialLinks: SocialLinks = [
 
 export const menuLinks: MenuLinks = [
   {
-    link: '/blog',
-    label: 'Blog'
+    link: '/pub',
+    label: 'Publications'
   },
   {
     link: '/projects',
