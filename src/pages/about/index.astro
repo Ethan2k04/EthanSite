@@ -2,7 +2,6 @@
 import Collapse from '@/components/Collapse.astro'
 import Timeline from '@/components/Timeline.astro'
 import PageLayout from '@/layouts/CommonPage.astro'
-import Comment from '@/components/Comment.astro'
 import ToolSection from '@/components/about/ToolSection.astro'
 import Button from '@/components/Button.astro'
 import Substats from '@/components/about/Substats.astro'
@@ -11,33 +10,24 @@ import Spoiler from '@/components/Spoiler.astro'
 const headings = [
   {
     depth: 2,
-    slug: 'general-talk',
-    text: 'General Talk'
+    slug: 'cv',
+    text: 'Resume/CV'
   },
   {
     depth: 2,
-    slug: 'tools',
-    text: 'Tools'
+    slug: 'general-talk',
+    text: 'General Talk'
   },
   {
     depth: 2,
     slug: 'social-networks',
     text: 'Social Networks'
   },
-  {
-    depth: 2,
-    slug: 'gossips',
-    text: 'Gossips'
-  },
-  {
-    depth: 2,
-    slug: 'about-blog',
-    text: 'About Blog'
-  }
 ]
 ---
 
 <PageLayout title='About' headings={headings} info='/about'>
+  <h2 id='cv'>Resume/CV</h2>
   <p>My CV: <a href="/CV_English.pdf" target="_blank" rel="noopener">CV_English.pdf</a></p>
   <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' />
   <!-- general-talk -->
@@ -56,5 +46,4 @@ const headings = [
     My active social network accounts, you can check me out following these links:
   </p>
   <Substats />
-  <Comment slot='bottom' />
 </PageLayout>

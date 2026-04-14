@@ -12,7 +12,6 @@ const titleSeparator = '•'
 const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 const socialImageURL = new URL(ogImage ? ogImage : '/images/social-card.png', Astro.url).href
-const { walineServerUrl } = siteConfig
 ---
 
 <meta charset='utf-8' />
@@ -88,9 +87,6 @@ const { walineServerUrl } = siteConfig
 />
 
 <meta content={Astro.generator} name='generator' />
-
-{/* Waline */}
-<meta content={walineServerUrl} name='waline-server-url' />
 
 {/* Styles */}
 <link rel='stylesheet' href='/styles/global.css' />

@@ -14,7 +14,6 @@ export type SiteConfig = {
     url: string
     text: string
   }
-  walineServerUrl: string
   applyFriendTip: {
     name: string
     slogan: string

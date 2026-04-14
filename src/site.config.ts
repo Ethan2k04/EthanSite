@@ -28,7 +28,6 @@ export const siteConfig: SiteConfig = {
   //   url: 'https://icp.gov.moe/?keyword=APTX4869',
   //   text: '萌ICP备APTX4869号'
   // },
-  walineServerUrl: 'https://www.ethan2k04.icu/',
   applyFriendTip: {
     name: 'Ethan\'s Site',
     slogan: 'Stay hungry, stay foolish.',
@@ -38,16 +37,7 @@ export const siteConfig: SiteConfig = {
 }
 
 // will be used in Footer.astro
-export const socialLinks: SocialLinks = [
-  // {
-  //   name: 'mail',
-  //   url: 'mailto:test@example.com'
-  // },
-  {
-    name: 'github',
-    url: 'hhttps://github.com/Ethan2k04/Ethan2k04'
-  }
-]
+export const socialLinks: SocialLinks = []
 
 export const menuLinks: MenuLinks = [
   {

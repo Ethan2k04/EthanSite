@@ -10,12 +10,7 @@ import BackToTop from '@/components/pages/BackToTop.astro'
 interface Props {
   title: string
   headings?: MarkdownHeading[]
-  info?:
-    | string
-    | {
-        slug: string
-        hideComment?: boolean
-      }
+  info?: string | { slug: string }
 }
 
 const { title, headings, info, ...props } = Astro.props
@@ -40,9 +35,6 @@ const { title, headings, info, ...props } = Astro.props
             info && (
               <PageInfo
                 path={typeof info === 'string' ? info : info.slug}
-                hideComment={
-                  typeof info === 'object' && info.hideComment ? info.hideComment : false
-                }
                 class='italic'
               />
             )
