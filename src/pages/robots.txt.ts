@@ -4,8 +4,8 @@ const robotsTxt = `
 User-agent: GPTBot
 User-agent: ClaudeBot
 User-agent: Claude-Web
-Disallow: /blog/
-Allow: /blog/$
+Disallow: /pub/
+Allow: /pub/$
 
 User-agent: *
 Allow: /

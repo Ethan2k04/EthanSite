@@ -107,8 +107,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         subheading='Nanyang Technological University'
         date='Aug 2026 – Jan 2028'
         href='https://www.ntu.edu.sg/'
+        class='ntu-card'
         style={{
-          backgroundImage: 'url(images/NTU_logo.svg)',
           backgroundPosition: 'right -20px center',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '280px'
@@ -239,6 +239,12 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     }
     :global(html.dark .cvlab-card) {
       background-image: url('/images/nankai_cvlab_logo_night.png');
+    }
+    :global(html:not(.dark) .ntu-card) {
+      background-image: url('/images/NTU_logo_day.svg');
+    }
+    :global(html.dark .ntu-card) {
+      background-image: url('/images/NTU_logo_night.svg');
     }
   </style>
 

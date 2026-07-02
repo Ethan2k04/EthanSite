@@ -60,7 +60,7 @@ const GET = async (context: AstroGlobal) => {
     items: await Promise.all(
       allPostsByDate.map(async (post) => ({
         pubDate: post.data.publishDate,
-        link: `/blog/${post.slug}`,
+        link: `/pub/${post.slug}`,
         customData: `
                 <h:img src="${typeof post.data.coverImage?.src === 'string' ? post.data.coverImage?.src : post.data.coverImage?.src.src}" />
                 <enclosure url="${typeof post.data.coverImage?.src === 'string' ? post.data.coverImage?.src : post.data.coverImage?.src.src}" />
