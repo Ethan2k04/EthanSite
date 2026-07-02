@@ -20,6 +20,8 @@ const {
   class: className
 } = Astro.props
 const postDate = data.updatedDate ?? data.publishDate
+const href = data.projectUrl ?? `/pub/${slug}`
+const isExternal = !!data.projectUrl
 
 const { remarkPluginFrontmatter } = await render()
 ---
@@ -37,8 +39,10 @@ const { remarkPluginFrontmatter } = await render()
       !detailed && 'sm:flex-row',
       detailed && data.coverImage && 'max-md:pt-24'
     )}
-    href={`/pub/${slug}`}
-    data-astro-prefetch
+    href={href}
+    target={isExternal ? '_blank' : undefined}
+    rel={isExternal ? 'noopener noreferrer' : undefined}
+    data-astro-prefetch={isExternal ? undefined : true}
   >
     {
       detailed && data.coverImage && (
@@ -59,7 +63,7 @@ const { remarkPluginFrontmatter } = await render()
       <div class='flex justify-between'>
         <div>
           {data.draft && <span class='text-red-500'>(Draft) </span>}
-          {data.title}
+          {!detailed ? (data.shortTitle ?? data.title) : data.title}
         </div>
         <svg
           xmlns='http://www.w3.org/2000/svg'

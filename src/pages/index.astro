@@ -78,9 +78,9 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     </section>
 
     <Section title='About'>
-      <p class='text-muted-foreground'>Senior Student / Intern</p>
+      <p class='text-muted-foreground'>Graduate Student / Intern</p>
       <p class='text-muted-foreground'>
-        I'm currently a CS undergraduate student at Nankai University and an intern of Microsoft STCA. I will join Nanyang Technological University as a graduate student soon. I have a strong interest in 3D Vision, AI Agents and Game Development. I am passionate about making AI to benefit all humanity🤗. 
+        Currently working at Microsoft. Will be studying AI at Nanyang Technological University as a graduate student. I have a strong interest in Computer Vision, AI Agent, Finance and Game Development. I am passionate about exploring the boundary of AI systems.
       </p>
       <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
     </Section>
@@ -103,12 +103,27 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     <Section title='Education'>
       <Card
         as='a'
+        heading='M.S. in Artificial Intelligence'
+        subheading='Nanyang Technological University'
+        date='Aug 2026 – Jan 2028'
+        href='https://www.ntu.edu.sg/'
+        style={{
+          backgroundImage: 'url(images/NTU_logo.svg)',
+          backgroundPosition: 'right -20px center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '280px'
+        }}
+      >
+        <ul class='ms-4 list-disc text-muted-foreground'></ul>
+      </Card>
+      <Card
+        as='a'
         heading='B.S. in Computer Science'
         subheading='Nankai University'
         date='Sept 2022 – July 2026'
         href='https://en.nankai.edu.cn/'
         style={{
-          backgroundImage: 'url(images/Nankai_University_logo.svg)',
+          backgroundImage: 'url(images/NKU_logo.svg)',
           backgroundPosition: 'right',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '240px'

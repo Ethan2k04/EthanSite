@@ -11,7 +11,8 @@ const post = defineCollection({
   type: 'content',
   schema: ({ image }) =>
     z.object({
-      title: z.string().max(60),
+      title: z.string(),
+      shortTitle: z.string().max(60).optional(),
       description: z.string().min(15).max(160),
       publishDate: z
         .string()
@@ -31,7 +32,8 @@ const post = defineCollection({
       draft: z.boolean().default(false),
       tags: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
       ogImage: z.string().optional(),
-      language: z.string().optional()
+      language: z.string().optional(),
+      projectUrl: z.string().url().optional()
     })
 })
 

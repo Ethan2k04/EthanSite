@@ -1,16 +1,20 @@
 ---
-title: 'VIGOR: Video Geometry-Oriented Reward for Alignment'
+title: '[ECCV 2026] VIGOR: VIdeo Geometry-Oriented Reward for Temporal Generative Alignment'
+shortTitle: '[ECCV 2026🎉] VIGOR: Video Geometry-Oriented Reward'
 publishDate: 2026-03-18 00:00:00
 description: 'A geometry-based reward for video diffusion alignment using pointwise reprojection error, enabling post-training (SFT/DPO) and training-free test-time scaling.'
 tags:
-  - Video Diffusion
+  - Video Diffusion Model
   - 3D Vision
   - Geometric Consistency
   - Reward Model
-  - RLHF
 coverImage: { src: './frontpage.png', color: '#4A6FA5' }
 language: 'English'
+projectUrl: 'https://vigor-geometry-reward.com/'
 ---
+
+> [!IMPORTANT]
+> **Accepted at ECCV 2026.** This paper has been accepted as a conference paper at the European Conference on Computer Vision (ECCV) 2026.
 
 **Paper:** [arXiv:2603.16271](https://arxiv.org/abs/2603.16271) &nbsp;|&nbsp; **Project Page:** [vigor-geometry-reward.com](https://vigor-geometry-reward.com/)
 
