@@ -7,7 +7,6 @@ import Card from '@/components/Card.astro'
 import ProjectCard from '@/components/home/ProjectCard.astro'
 import Label from '@/components/home/Label.astro'
 import SkillLayout from '@/components/home/SkillLayout.astro'
-import Hitokoto from '@/components/home/Hitokoto.astro'
 import PostPreview from '@/components/blog/PostPreview.astro'
 import Button from '@/components/Button.astro'
 import { siteConfig } from '@/site-config'
@@ -80,7 +79,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     <Section title='About'>
       <p class='text-muted-foreground'>Graduate Student / Intern</p>
       <p class='text-muted-foreground'>
-        Currently working at Microsoft. Will be studying AI at Nanyang Technological University as a graduate student. I have a strong interest in Computer Vision, AI Agent, Finance and Game Development. I am passionate about exploring the boundary of AI systems.
+        Currently working at Microsoft. Will join Nanyang Technological University to study AI as a graduate student. Have strong interest in Computer Vision, AI Agent, Finance and Game Development. Passionate about exploring the boundary of AI systems.
       </p>
       <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
     </Section>
@@ -142,7 +141,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
     <Section title='Experience'>
       <Card
         as='a'
-        heading='Software Engineer Intern'
+        heading='Applied Scientist Intern'
         subheading='Microsoft STCA'
         date='April 2026 - July 2026'
         href='https://www.microsoft.com/en-us/aprd/aboutus/team-stca'
@@ -247,17 +246,4 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       background-image: url('/images/NTU_logo_night.svg');
     }
   </style>
-
-  <div
-    class='mt-16 flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md'
-  >
-    <span class='relative flex items-center justify-center'>
-      <span
-        class='absolute inline-flex h-2 w-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75'
-      ></span>
-      <span class='relative inline-flex h-2 w-2 rounded-full bg-green-400'></span>
-    </span>
-
-    <Hitokoto />
-  </div>
 </PageLayout>
