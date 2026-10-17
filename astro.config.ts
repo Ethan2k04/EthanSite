@@ -1,7 +1,9 @@
 import { defineConfig } from 'astro/config'
 // Adapter
 // if you want deploy on vercel
-import vercel from '@astrojs/vercel/serverless'
+// Static output: @astrojs/vercel 7.x serverless only knows Node 18/20 runtimes,
+// both retired on Vercel, so the site is prebuilt instead
+import vercel from '@astrojs/vercel/static'
 // ---
 // if you want deploy locally
 // import node from '@astrojs/node'
@@ -26,7 +28,7 @@ export default defineConfig({
   site: siteConfig.site,
   // base: '/docs',
   trailingSlash: 'never',
-  output: 'server',
+  output: 'static',
   // if you want deploy on vercel
   adapter: vercel({
     webAnalytics: {
