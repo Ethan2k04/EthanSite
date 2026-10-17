@@ -6,35 +6,43 @@ import Section from '@/components/home/Section.astro'
 import Card from '@/components/Card.astro'
 import ProjectCard from '@/components/home/ProjectCard.astro'
 import Label from '@/components/home/Label.astro'
-import SkillLayout from '@/components/home/SkillLayout.astro'
-import PostPreview from '@/components/blog/PostPreview.astro'
-import Button from '@/components/Button.astro'
 import { siteConfig } from '@/site-config'
-import { getAllPosts, sortMDByDate } from '@/utils'
 import GithubCard from '@/components/GithubCard.astro'
 
 import avatar from '@/assets/avatar.png'
 
-const language = ['C/C++', 'Python', 'C#', 'Rust']
-const techstack = ['Git', 'Pytorch', 'OpenCV', 'Huggingface']
-const research = ['3D Vision', 'Diffusion Model', 'AI Agent']
+const linkClass =
+  'text-foreground underline decoration-muted-foreground/40 underline-offset-4 hover:text-primary hover:decoration-primary'
 
-const MAX_POSTS = 10
-const allPosts = await getAllPosts()
-const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
+const publications = [
+  {
+    authors: ['Tengjiao Yin', 'Jinglei Shi', 'Heng Guo', 'Xi Wang'],
+    title: 'VIGOR: VIdeo Geometry-Oriented Reward for Temporal Generative Alignment',
+    venue: 'ECCV',
+    year: 2026,
+    arxiv: '2603.16271',
+    project: 'https://vigor-geometry-reward.com/',
+    links: {
+      paper: 'https://doi.org/10.1007/978-3-032-37189-8_14',
+      arxiv: 'https://arxiv.org/abs/2603.16271',
+      code: 'https://github.com/Ethan2k04/VIGOR',
+      poster: 'https://eccv.ecva.net/virtual/2026/poster/3197'
+    }
+  }
+]
 ---
 
 <PageLayout meta={{ title: 'Home' }} highlightColor='#659EB966'>
-  <div class='flex w-full flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
-    <section class='animate flex flex-col items-center gap-y-7'>
+  <div class='-mt-6 flex w-full flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
+    <section class='animate flex flex-col items-center gap-y-5'>
       <Image
         src={avatar}
         alt='profile'
-        class='h-28 w-auto rounded-full border p-1'
+        class='h-24 w-auto rounded-full border p-1'
         loading='eager'
       />
 
-      <div class='flex flex-col items-center gap-y-4'>
+      <div class='flex flex-col items-center gap-y-3'>
         <h1 class='text-3xl font-bold'>{siteConfig.author}</h1>
         <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
           <Label title='Singapore'>
@@ -63,6 +71,16 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
             </svg>
           </Label>
           <Label
+            title='Google Scholar'
+            as='a'
+            href='https://scholar.google.fr/citations?user=fW1BZeoAAAAJ&hl=en'
+            target='_blank'
+          >
+            <svg class='size-5' slot='icon'>
+              <use href='/icons/social.svg#google-scholar-line'></use>
+            </svg>
+          </Label>
+          <Label
             title='Email'
             as='a'
             href='mailto:yintengjiao2004@gmail.com'
@@ -76,28 +94,76 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       </div>
     </section>
 
+    <link
+      href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Ma+Shan+Zheng&display=swap'
+      rel='stylesheet'
+    />
     <Section title='About'>
-      <p class='text-muted-foreground'>NTU PG | Artificial Intelligence</p>
       <p class='text-muted-foreground'>
-        I previously interned at Microsoft, now studying AI in Nanyang Technological University as a PG. I have strong interest in Video Generation, 3D Vision, AI Agent and Finance. My passion is about exploring the boundary of state-of-the-art AI systems.
+        Master's Student | MMLab@NTU |
+        <a class={linkClass} href='/CV_English.pdf' target='_blank'>CV</a>
       </p>
-      <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
+      <p class='text-muted-foreground'>
+        I'm currently a Master's student at
+        <a class={linkClass} href='https://www.mmlab-ntu.com/' target='_blank'>MMLab@NTU</a>,
+        Nanyang Technological University, advised by
+        <a class={linkClass} href='https://liuziwei7.github.io/' target='_blank'>Prof. Ziwei Liu</a>.
+        Before that, I was fortunate to work with
+        <a class={linkClass} href='https://jingleishi.github.io/' target='_blank'>Prof. Jinglei Shi</a>
+        and
+        <a class={linkClass} href='https://triocrossing.github.io/' target='_blank'>Prof. Xi Wang</a>,
+        and I also interned at Microsoft. My research interests lie in Image/Video Generation, 3D
+        Vision, AI Agents, and Finance.
+      </p>
+      <div class='motto rounded-2xl border border-border bg-primary-foreground px-5 py-3'>
+        <p>
+          <span class='motto-lead text-foreground'>Poetically man dwells</span>
+          <span class='text-muted-foreground'>
+            on this <span class='motto-script text-primary'>earth</span>.
+          </span>
+        </p>
+        <p class='flex flex-wrap items-baseline gap-x-4'>
+          <span class='motto-zh text-muted-foreground'>人，诗意地栖居</span>
+          <span class='ms-auto text-sm text-muted-foreground'>&mdash; Martin Heidegger</span>
+        </p>
+      </div>
     </Section>
-    {
-      allPostsByDate.length > 0 && (
-        <Section title='Publications'>
-          <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
-            {allPostsByDate.map((p) => (
-              <li class='flex flex-col gap-x-2 sm:flex-row'>
-                {/* @ts-ignore */}
-                <PostPreview post={p} />
-              </li>
-            ))}
-          </ul>
-          <Button title='More publications' class='w-fit self-end' href='/pub' style='ahead' />
-        </Section>
-      )
-    }
+
+    <Section title='Publications'>
+      <ul class='ms-4 flex list-disc flex-col gap-y-4'>
+        {
+          publications.map((pub) => (
+            <li>
+              <p class='text-muted-foreground'>
+                {pub.authors.map((name, i) => (
+                  <>
+                    {i > 0 && ', '}
+                    {name === siteConfig.author ? (
+                      <span class='text-foreground underline underline-offset-4'>{name}</span>
+                    ) : (
+                      name
+                    )}
+                    {i === pub.authors.length - 1 && '.'}
+                  </>
+                ))}
+              </p>
+              <p>
+                <a class='font-semibold' href={pub.project} target='_blank'>{pub.title}</a>,{' '}
+                <span class='text-muted-foreground'>
+                  <i>{pub.venue}</i> ({pub.year}). <i>arxiv</i>: {pub.arxiv}
+                </span>
+                {Object.entries(pub.links).map(([label, url]) => (
+                  <>
+                    {' '}
+                    <a class='text-primary hover:underline' href={url} target='_blank'>[{label}]</a>
+                  </>
+                ))}
+              </p>
+            </li>
+          ))
+        }
+      </ul>
+    </Section>
 
     <Section title='Education'>
       <Card
@@ -224,15 +290,32 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         />
       </div>
     </Section> -->
-
-    <Section title='Skills'>
-      <SkillLayout title='Language' skills={language} />
-      <SkillLayout title='Tech Stack' skills={techstack} />
-      <SkillLayout title='Research Area' skills={research} />
-    </Section>
   </div>
 
   <style>
+    .motto {
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+    }
+    .motto-lead {
+      font-size: 1.2em;
+      font-style: italic;
+      font-weight: 600;
+    }
+    .motto-script {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.5em;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .motto-zh {
+      font-family: 'Ma Shan Zheng', STKaiti, KaiTi, serif;
+      font-size: 1.3em;
+      letter-spacing: 0.12em;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
     :global(html:not(.dark) .cvlab-card) {
       background-image: url('/images/nankai_cvlab_logo_day.png');
     }

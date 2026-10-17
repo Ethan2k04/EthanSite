@@ -39,21 +39,22 @@ export const siteConfig: SiteConfig = {
 // will be used in Footer.astro
 export const socialLinks: SocialLinks = []
 
+// All entries hidden for now; the pages themselves still exist
 export const menuLinks: MenuLinks = [
-  {
-    link: '/pub',
-    label: 'Publications'
-  },
-  {
-    link: '/projects',
-    label: 'Projects'
-  },
-  {
-    link: '/links',
-    label: 'Links'
-  },
-  {
-    link: '/about',
-    label: 'About'
-  }
+  // {
+  //   link: '/pub',
+  //   label: 'Publications'
+  // },
+  // {
+  //   link: '/projects',
+  //   label: 'Projects'
+  // },
+  // {
+  //   link: '/links',
+  //   label: 'Links'
+  // },
+  // {
+  //   link: '/about',
+  //   label: 'About'
+  // }
 ]
