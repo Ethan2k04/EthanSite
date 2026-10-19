@@ -6,7 +6,7 @@ export const siteConfig: SiteConfig = {
   // Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
   title: 'Ethan\'s Site',
   // Meta property used to generate your sitemap and canonical URLs in your final build
-  site: 'https://ethan-site-five.vercel.app/',
+  site: 'https://www.ethan2k04.com/',
   // Meta property used as the default description meta property
   description: 'Always exploring',
   // HTML lang property, found in src/layouts/Base.astro L:18
@@ -31,8 +31,8 @@ export const siteConfig: SiteConfig = {
   applyFriendTip: {
     name: 'Ethan\'s Site',
     slogan: 'Stay hungry, stay foolish.',
-    url: 'https://www.ethan2k04.icu/',
-    avatar: 'https://www.ethan2k04.icu/_image?href=%2F_astro%2Favatar.DEuqP5JF.png&f=webp'
+    url: 'https://www.ethan2k04.com/',
+    avatar: 'https://www.ethan2k04.com/images/avatar.webp'
   }
 }
 
