@@ -44,14 +44,6 @@ import { siteConfig, menuLinks } from '@/site-config'
                 </a>
               ))
             }
-            <div class='flex w-full grow flex-row justify-end gap-x-3 sm:w-fit sm:gap-x-5'>
-              <a class='px-1 py-2' href='/search' title='Search'>
-                <span class='sr-only'>Search</span>
-                <svg class='size-5'>
-                  <use href='/icons/header.svg#mingcute-search-2-line'></use>
-                </svg>
-              </a>
-            </div>
           </div>
         </div>
 
@@ -69,15 +61,19 @@ import { siteConfig, menuLinks } from '@/site-config'
               <use href='/icons/header.svg#mingcute-moon-stars-line'></use>
             </svg>
           </button>
-          <button
-            id='toggleMenu'
-            class='rounded-md border p-1.5 transition-all hover:bg-border sm:hidden sm:group-[.not-top]:rounded-xl'
-          >
-            <span class='sr-only'>Menu</span>
-            <svg class='size-5'>
-              <use href='/icons/header.svg#mingcute-menu-line'></use>
-            </svg>
-          </button>
+          {
+            menuLinks.length > 0 && (
+              <button
+                id='toggleMenu'
+                class='rounded-md border p-1.5 transition-all hover:bg-border sm:hidden sm:group-[.not-top]:rounded-xl'
+              >
+                <span class='sr-only'>Menu</span>
+                <svg class='size-5'>
+                  <use href='/icons/header.svg#mingcute-menu-line'></use>
+                </svg>
+              </button>
+            )
+          }
         </div>
       </div>
     </nav>
